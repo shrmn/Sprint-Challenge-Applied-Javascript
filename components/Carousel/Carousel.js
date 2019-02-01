@@ -20,7 +20,7 @@ class Carousel {
 
     cycleRight() {
         this.images[this.index].style.display = 'none';
-        this.index === this.image.length + 1 ? this.index = 0 : this.index++;
+        this.index === this.images.length - 1 ? this.index = 0 : this.index++;
         this.images[this.index].style.display = 'block';
     }
 }
